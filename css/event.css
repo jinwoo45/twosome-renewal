@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+#eventB{
+    width: 100%; max-width: 1200px; margin: auto;
+}
+
+#btnBox{
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 
+}
+
+.eventBtn{
+    border: none;
+    background: none;
+    font-size: 25px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer; transition: .3s;
+    font-weight: 700;color: #000;
+    margin-bottom: 10px;
+}
+
+.eventBtn:hover{
+    color: #d50037;
+}
+
+.active{
+     color: #d50037;
+}
+
+.eventBtn::after{
+    position: absolute;
+    top:100%; left:50%; transform: translateX(-50%);
+    width: 0%; height: 5px;
+    content: "";
+    border-bottom: 2px solid #d50037;
+    transition: .3s;
+}
+
+.eventBtn:hover::after{
+    width: 100%;
+}
+
+#eventOutBox{
+    width: 100%;
+    display: flex; flex-wrap: wrap;
+}
+
+.eventBox{
+    width: calc((100% - 60px) / 3);
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.eventBox::after{
+    position: absolute;
+    top:5px; left: 0;
+    content: "진행 중";
+    width: 60px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+    background: #d50037;
+    text-align: center;
+    box-shadow: 2px 2px 2px #333;
+}
+
+.imgBox{
+    width:100%; overflow: hidden;
+}
+
+.eventImg{
+    width: 100%;
+    display: block;
+    cursor: pointer; transition: .5s;
+}
+
+.eventImg:hover{
+    transform: scale(1.1);
+}
+
+.caption{
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.caption p{
+    color: #777;
+}
+
+#eventOutBox2{
+    display: none;
+    padding: 20px;
+    color: #555;
+}
+    
+@media screen and (max-width : 600px){
+    .eventBox{
+    width: calc((100% - 40px) / 2);
+    }
+}
+
+@media screen and (max-width : 400px){
+    .eventBox{
+    width: calc(100% - 20px);
+    }
+}
