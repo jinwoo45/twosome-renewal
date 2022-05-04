@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,101 +19,143 @@
     <link href="css/jQ-parallax.css" rel="stylesheet" />
     <link href="css/animate_v3.7.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
-     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick-theme.css">
-      <style type="text/css">
-    html, body { margin: 0; padding: 0 }
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick-theme.css">
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0
+        }
 
-    * { box-sizing: border-box }
+        * {
+            box-sizing: border-box
+        }
 
-    .slick-slide {   /*슬라이더 내부 콘텐츠 여백*/
-      margin:0 20px }
+        .slick-slide {
+            /*슬라이더 내부 콘텐츠 여백*/
+            margin: 0 20px
+        }
 
-    .slick-slide img {   /* 슬라이더 내부 이미지 크기*/
-      width: 100% }
+        .slick-slide img {
+            /* 슬라이더 내부 이미지 크기*/
+            width: 100%
+        }
 
 
 
-   /*좌우 슬라이더 버튼*/
-   .slick-prev:before, .slick-next:before {     /*공통*/ 
-       color: #000;  font-family: 'Nanum Gothic', sans-serif;  font-weight:900}
-    .slick-prev:before { content:"\2329"}    /*이전버튼 문자*/ 
-    .slick-next:before { content:"\232a"}    /*다음버튼 문자*/ 
-    .slick-prev { transform:scale(2); margin-left:-20px; z-index:10; }    /*이전버튼 모양*/ 
-    .slick-next { transform:scale(2); margin-right:-20px; z-index:10; }    /*다음버튼 모양*/ 
-    
-    
-    .slick-slide {    /*슬라이더 기본 모양*/
-      transition: all ease-in-out .3s;
-      opacity: 1 }
+        /*좌우 슬라이더 버튼*/
+        .slick-prev:before,
+        .slick-next:before {
+            /*공통*/
+            color: #000;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 900
+        }
 
-    .slick-active {  /*표시되는 슬라이드 내용*/
-      opacity: 1 }
+        .slick-prev:before {
+            content: "\2329"
+        }
 
-    .slick-current {  /*표시되는 슬라이드 첫번째 내용*/
-      opacity: 1 }
-	
-    .regular {     /*슬라이더 박스*/
-      width:100%; margin:50px auto }
-</style>
+        /*이전버튼 문자*/
+        .slick-next:before {
+            content: "\232a"
+        }
+
+        /*다음버튼 문자*/
+        .slick-prev {
+            transform: scale(2);
+            margin-left: -20px;
+            z-index: 10;
+        }
+
+        /*이전버튼 모양*/
+        .slick-next {
+            transform: scale(2);
+            margin-right: -20px;
+            z-index: 10;
+        }
+
+        /*다음버튼 모양*/
+
+
+        .slick-slide {
+            /*슬라이더 기본 모양*/
+            transition: all ease-in-out .3s;
+            opacity: 1
+        }
+
+        .slick-active {
+            /*표시되는 슬라이드 내용*/
+            opacity: 1
+        }
+
+        .slick-current {
+            /*표시되는 슬라이드 첫번째 내용*/
+            opacity: 1
+        }
+
+        .regular {
+            /*슬라이더 박스*/
+            width: 100%;
+            margin: 50px auto
+        }
+    </style>
 
     <!-- Demo styles -->
     <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
 
-      .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-      .swiper-container {
-        margin-left: auto;
-        margin-right: auto;
-      }
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .swiper-button-next {
             color: #fff;
@@ -133,15 +176,15 @@
     <div id="preload">
         <img src="images/30.svg" />
     </div>
-    
-        <div id="popup">
+
+    <div id="popup">
 
 
         <div id="popupContents">
             <img src="images/renewal.jpg" />
         </div>
 
-        <button id="popClose1">&times; 오늘하루보지않기</button>
+        <button id="popClose1">&times; 오늘하루보기</button>
         <button id="popClose">&times;</button>
     </div>
 
@@ -151,15 +194,18 @@
         <div id="gnb-sub">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i class="fab fa-instagram snsicon2"></i></a>
+                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i
+                            class="fab fa-instagram snsicon2"></i></a>
 
                 </li>
                 <li>
-                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i class="fab fa-facebook-f snsicon2"></i></a>
+                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i
+                            class="fab fa-facebook-f snsicon2"></i></a>
 
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i class="fab fa-youtube-square snsicon2"></i></a>
+                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i
+                            class="fab fa-youtube-square snsicon2"></i></a>
                 </li>
             </ul>
             <ul>
@@ -191,7 +237,8 @@
 
                 <div id="login">
                     <button><a href="login.html">LOGIN</a></button>
-                    <button><a href="https://www.cjone.com/cjmweb/join.do?coopco_cd=7180&brnd_cd=1801&mcht_no=1801&coop_return_url=l">JOIN</a></button>
+                    <button><a
+                            href="https://www.cjone.com/cjmweb/join.do?coopco_cd=7180&brnd_cd=1801&mcht_no=1801&coop_return_url=l">JOIN</a></button>
                 </div>
 
 
@@ -293,7 +340,7 @@
             <h1><i class="fas fa-mug-hot"></i> MENU<span> STORY</span></h1>
         </div>
 
-<!--
+        <!--
         <div id="menuBox" class="wow fadeInUp">
 
             <div id="menuBox__In">
@@ -352,45 +399,45 @@
         </div>
 -->
 
-   <div class="regular slider">
-        <div class="menuSlide">
-          <img src="images/menu1.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>TWG 1837 블랙티</h3>
-                    </div>
+        <div class="regular slider">
+            <div class="menuSlide">
+                <img src="images/menu1.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>TWG 1837 블랙티</h3>
+                </div>
+            </div>
+            <div class="menuSlide">
+                <img src="images/menu2.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>TWG 1837 블랙티</h3>
+                </div>
+            </div>
+            <div class="menuSlide">
+                <img src="images/menu3.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>TWG 1837 블랙티</h3>
+                </div>
+            </div>
+            <div class="menuSlide">
+                <img src="images/menu4.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>스트로베리 피치 프라페</h3>
+                </div>
+            </div>
+            <div class="menuSlide">
+                <img src="images/menu5.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>스트로베리 초콜릿 생크림</h3>
+                </div>
+            </div>
+            <div class="menuSlide">
+                <img src="images/menu6.jpg" class="menuImg" href="menu.html">
+                <div class="caption">
+                    <h3>마스카포네 티라미수</h3>
+                </div>
+            </div>
         </div>
-        <div class="menuSlide">
-          <img src="images/menu2.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>TWG 1837 블랙티</h3>
-                    </div>
-        </div>
-        <div class="menuSlide">
-          <img src="images/menu3.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>TWG 1837 블랙티</h3>
-                    </div>
-        </div>
-        <div class="menuSlide">
-          <img src="images/menu4.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>스트로베리 피치 프라페</h3>
-                    </div>
-        </div>
-        <div class="menuSlide">
-          <img src="images/menu5.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>스트로베리 초콜릿 생크림</h3>
-                    </div>
-        </div>
-        <div class="menuSlide">
-          <img src="images/menu6.jpg" class="menuImg" href = "menu.html">
-                              <div class="caption">
-                        <h3>마스카포네 티라미수</h3>
-                    </div>
-        </div>
-  </div>
-   
+
     </section>
 
     <!--------------secB 끝 secC 시작------------------------>
@@ -402,7 +449,8 @@
                 <h1>FRANCHISE</h1>
                 <h3>당신의 창업 성공 스토리,</h3>
                 <h3> 투썸플레이스가 함께합니다.</h3>
-                <button id="secC_button" href = "business.html"><span><i class="fas fa-store"></i></span><span>가맹점 문의</span> </button>
+                <button id="secC_button" href="business.html"><span><i class="fas fa-store"></i></span><span>가맹점
+                        문의</span> </button>
             </div>
         </div>
     </section>
@@ -417,34 +465,44 @@
 
         <div id="galleryBox">
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns1.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns1.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns2.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns2.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns3.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns3.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns4.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns4.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns5.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns5.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns6.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns6.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns7.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns7.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns8.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns8.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns9.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
+                <img src="images/sns9.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.instagram.com/p/CO9ko7FHzaV/')" />
             </div>
             <div class="snsGallery wow fadeInDown">
-                <img src="images/sns10.jpg" alt="SNS이미지" class="snsImage" onclick="window.open ( 'https://www.youtube.com/watch?v=8vMRtiU9638')" />
+                <img src="images/sns10.jpg" alt="SNS이미지" class="snsImage"
+                    onclick="window.open ( 'https://www.youtube.com/watch?v=8vMRtiU9638')" />
             </div>
 
         </div>
@@ -541,9 +599,12 @@
 
                 <div id="snsBox">
                     <span>Follow us :</span>
-                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i class="fab fa-instagram snsicon2"></i></a>
-                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i class="fab fa-facebook-f snsicon2"></i></a>
-                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i class="fab fa-youtube-square snsicon2"></i></a>
+                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i
+                            class="fab fa-instagram snsicon2"></i></a>
+                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i
+                            class="fab fa-facebook-f snsicon2"></i></a>
+                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i
+                            class="fab fa-youtube-square snsicon2"></i></a>
                 </div>
             </div>
 
@@ -575,7 +636,7 @@
     </script>
     <script src="script/easeScroll/jquery.easeScroll.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("html, body").easeScroll({
                 frameRate: 60,
                 animationTime: 1000, //스크롤 애니메이션 속도
@@ -595,74 +656,67 @@
 
     <!-- Initialize Swiper -->
     <script>
-var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      });
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
     </script>
-    <script src = "plugin/slick/slick/slick.js"></script>
-      <script type="text/javascript">
-    $(document).ready( function() {
- 	
-	$('.regular').slick({
-		  infinite: true,    //무한 반복(true, false)
-		  autoplay:true,   //자동 Play(true, false)
-		  speed:600,   //슬라이드 전환 시간(단위:ms)
-		  autoplaySpeed: 3000,    //슬라이드 전환 후 대기 시간(단위:ms)
-		  focusOnSelect: true,
-		  pauseOnDotsHover:true,   //슬라이드에 마우스 오버 시 멈춤(true, false)
-		  dots:true,   //하단 페이지 버튼(원)
-		  slidesToShow: 4,   //보여지는 슬라이드 갯수
-		  slidesToScroll: 1,   //한 번에 스크롤되는 슬라이드 갯수
-		  
-		  responsive: [   //반응형 (breakpoint: 해상도)
-			{
-			  breakpoint: 1024,    //1024px 이하
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			  }
-			},
-			{
-			  breakpoint: 768,    //768px 이하
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			  }
-			},
-			{
-			  breakpoint: 480,    //480px 이하
-			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			  }
-			}
-		  ]
-    });    // $('.regular').slick 
-});   //$(document).ready
+    <script src="plugin/slick/slick/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.regular').slick({
+                infinite: true,    //무한 반복(true, false)
+                autoplay: true,   //자동 Play(true, false)
+                speed: 600,   //슬라이드 전환 시간(단위:ms)
+                autoplaySpeed: 3000,    //슬라이드 전환 후 대기 시간(단위:ms)
+                focusOnSelect: true,
+                pauseOnDotsHover: true,   //슬라이드에 마우스 오버 시 멈춤(true, false)
+                dots: true,   //하단 페이지 버튼(원)
+                slidesToShow: 4,   //보여지는 슬라이드 갯수
+                slidesToScroll: 1,   //한 번에 스크롤되는 슬라이드 갯수
+
+                responsive: [   //반응형 (breakpoint: 해상도)
+                    {
+                        breakpoint: 1024,    //1024px 이하
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 768,    //768px 이하
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,    //480px 이하
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });    // $('.regular').slick 
+        });   //$(document).ready
     </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src ="script/popup.js"></script>
-</body></html>
+    <script src="script/popup.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
+</html>
