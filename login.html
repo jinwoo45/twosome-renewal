@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 로그인 - TWOSOME PLACE </title>
+
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link href="css/preload.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+    <div id = "preload">
+        <img src = "images/30.svg"/>
+    </div>
+
+    <!------------헤더 시작 ----------->
+    <header id="header">
+
+        <div id = "gnb-sub">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i class="fab fa-instagram snsicon2"></i></a>
+
+                </li>
+                <li>
+                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i class="fab fa-facebook-f snsicon2"></i></a>
+
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i class="fab fa-youtube-square snsicon2"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li href = "login.html" class = "login">LOGIN</li>
+                <li class = "join">JOIN</li>
+            </ul>
+        </div>
+
+        <div id="mobilemenu">
+
+            <div id="map">
+                <a href="store.html"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+
+            <div id="logo"><a href="index.html"><img src="images/logo.png" id="logoImage" /></a></div>
+
+            <div id="view">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+
+        <nav id="navi">
+            <ul id="menu">
+
+                <div id="menuLogo">
+                    <img src="images/favicon.png" />
+                </div>
+
+                <div id="login">
+                    <button><a href="login.html">LOGIN</a></button>
+                    <button><a href="https://www.cjone.com/cjmweb/join.do?coopco_cd=7180&brnd_cd=1801&mcht_no=1801&coop_return_url=l">JOIN</a></button>
+                </div>
+
+
+                <li class="main">투썸플레이스 소개
+                    <ul class="submenu">
+                        <li class="sub" href = "brand.html">브랜드이야기</li>
+                        <li class="sub">커피이야기</li>
+                        <li class="sub">디저트이야기</li>
+                        <li class="sub">브랜드필름</li>
+                    </ul>
+                </li>
+                <li class="main">메뉴
+                    <ul class="submenu">
+                        <li class="sub" href="menu.html">커피 &amp; 음료</li>
+                        <li class="sub">아이스크림 &amp; 빙수</li>
+                        <li class="sub">케이크</li>
+                        <li class="sub">델리</li>
+                        <li class="sub">상품</li>
+                        <li class="sub">MD</li>
+                    </ul>
+                </li>
+                <li class="main">이벤트
+                    <ul class="submenu">
+                        <li class="sub" href="event.html">이벤트</li>
+                        <li class="sub">매장별 이벤트</li>
+                        <li class="sub">멤버십&amp;제휴카드</li>
+                    </ul>
+                </li>
+                <li class="main">매장찾기
+                    <ul class="submenu">
+                        <li class="sub" href="store.html">매장찾기</li>
+                        <li class="sub">FAQ</li>
+                    </ul>
+                </li>
+                <li class="main">가맹점 창업안내
+                    <ul class="submenu">
+                        <li class="sub"  href="Business.html">가맹점문의</li>
+                        <li class="sub">창업설명회</li>
+                        <li class="sub">창업정보 및 절차</li>
+                    </ul>
+                </li>
+                <li class="main">새소식&amp;공지
+                    <ul class="submenu">
+                        <li class="sub" href="notice.html">공지사항</li>
+                        <li class="sub">보도자료</li>
+                        <li class="sub">고객의소리</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="subBack"></div>
+        <!--서브 메뉴 뒷 배경-->
+        <div id="black"><button class="close">&times;</button></div>
+    </header>
+
+
+    <!--------------로그인 화면------------------------>
+
+
+    <section id="login__text">
+        <h1><span id = "span">Welcome to  A TWOSOME PLACE!</span></h1>
+        <h3>카카오를 통해 가입하신 CJ ONE 간편회원은,<br />CJ ONE 통합회원 가입 후 로그인이 가능합니다.</h3>
+    </section>
+
+    <form action="index.html" method="get" id="login-form">
+        <input type="text" placeholder="아이디"  class = "text"required />
+        <input type="password" placeholder="비밀번호" required class="text"/>
+        <input type="submit" id = "loginBtn" value="CJ ONE 통합 로그인">
+        <a href="#"> Find ID or Password</a>
+
+    </form>
+
+    <footer id="footer">
+
+        <div id="footerbox">
+
+            <div id="footerlogo">
+                <a href="#"><img src="images/small_logo2.png" /></a>
+            </div>
+
+            <div id="footertext1">
+                <ul id = "footerlist">
+                    <li class = "footerMenu"><a href="#">사이트 맵</a></li>
+                    <li class = "footerMenu"><a href="#">리쿠르트</a></li>
+                    <li class = "footerMenu"><a href="#">이용약관</a></li>
+                    <li class = "footerMenu"><a href="#">개인정보 방침</a></li>
+                    <li class = "footerMenu"><a href="#">위치기반서비스이용약관</a></li>
+                    <li class = "footerMenu"><a href="#">이메일무단수집거부</a></li>
+                    <li class = "footerMenu"><a href="#">법적고지 </a> </li>
+                </ul>
+
+
+                <p>서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워)투썸플레이스 (주) </p><br />
+
+                <p> Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD. All Rights Reserved. </p>
+            </div>
+
+            <div id="footertext2">
+
+                <h4><i class="fas fa-phone-alt"></i> 1677-4410 </h4>   
+                <h4><i class="fas fa-envelope"></i> helpmaster@twosome.co.kr</h4>
+                <h4><i class="fas fa-fax"></i> 02-2058-6777</h4>
+                
+               <div id = "snsBox">
+                <span>Follow us :</span>
+                    <a href="https://www.instagram.com/official_atwosomeplace/?igshid=1vu3rl2z5ps7n" target="blank"><i class="fab fa-instagram snsicon2"></i></a>
+                    <a href="https://ko-kr.facebook.com/ATWOSOMEPLACE/" target="blank"><i class="fab fa-facebook-f snsicon2"></i></a>
+                    <a href="https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q" target="blank"><i class="fab fa-youtube-square snsicon2"></i></a>
+               </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="#">
+        <button id="top">
+            <div><i class="fas fa-caret-up"></i></div>
+            <div>TOP</div>
+        </button></a>   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/preload.js"></script>
+
+</body></html>
+
+
+
+
+

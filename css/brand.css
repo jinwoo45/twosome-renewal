@@ -1,0 +1,230 @@
+@charset 'utf-8';
+
+#jssor_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caption div {
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 30px;
+}
+
+.caption2 h1{
+    font-size: 25px;
+}
+
+
+h1 span {
+    color: #d50037;
+}
+
+#brandD {
+    width: 100%;
+    max-width: 1200px;
+    margin:50px auto;
+}
+
+.DoutBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.DoutBox:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.Dbox:first-child {
+    width: 55%;
+    padding: 10px;
+}
+
+.Dbox:last-child{
+    width: 45%;
+    padding: 20px;
+}
+
+.Dbox img {
+    margin-top: 10px;
+    width: 100%; display: block;
+}
+
+.head{
+    color: #d50037;
+    font-size: 2rem;
+    position: relative;
+}
+
+.black{
+    color: #000;
+}
+
+.head::after{
+    position: absolute;
+    content: "";
+    top:100%; left: 0;
+    width: 100%;
+    border-bottom: 2px solid #d50037;
+}
+
+#brandD h1 {
+    margin-bottom: 10px;
+}
+
+.Dbox h3{
+     font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.Dbox p {
+    font-size: 18px;
+    color: #555;
+    line-height: 25px;
+}
+
+#brandC {
+    width: 100%; max-width: 1200px; margin: auto;
+    padding-top: 20px;
+    background: url(/images/brand_bg2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#brandC2{
+    width: 100%; max-width:1200px; margin: auto; 
+}
+
+#Chead{
+    background: rgba(0,0,0,.0);
+    width: 400px; margin:auto;
+}
+
+#brandC h1 {
+    text-align: center;
+    color: #555;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#CoutBox {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Cbox {
+    width: calc((100% - 40px) / 3);
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background:  rgba(0,0,0,.0);
+}
+
+#coffeeList{
+    list-style: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Cbox:last-child{
+    margin-right: 0;
+}
+
+.Cbox img {
+     width: 50%; display: block;
+}
+
+.list{
+    margin-bottom: 20px;
+}
+
+.list:first-child{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex; justify-content: center; align-items: center;flex-wrap: wrap;
+}
+
+.list:first-child h3{
+    width: 100%;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.list:first-child p{
+    color: darkgoldenrod;
+}
+
+.color2{
+    color: orange !important;
+}
+
+.cook{
+    color: coral !important;
+    font-size: 10px;
+    margin-right: 5px;
+}
+.Cbox h3 {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.Cbox p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    line-height: 25px;
+}
+
+
+@media screen and (max-width :900px) {
+    
+    .Cbox:last-child{
+        margin-right: 20px;
+    }
+    
+    .Cbox {
+        width: 100%;
+        margin: 20px;
+    }
+    
+    .DoutBox{
+        padding: 0 20px;
+    }
+    
+    .Dbox:first-child,.Dbox:last-child{
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width :500px) {
+    .head{
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    
+    .Dbox h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #Chead h1{
+        font-size: 30px;
+    }
+}
